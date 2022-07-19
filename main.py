@@ -196,14 +196,13 @@ class LouisVuittonAPI(object):
                     ('_D:/atg/commerce/order/purchase/CartModifierFormHandler.addItemToOrderErrorURL', ' '),
                     ('_DARGS', '/mobile/collections/productSheet/forms/addToCartForm.jsp')]
 
-            ATC = self.s.post('https://secure.louisvuitton.com/ajaxsecure/addToCartForm', headers=headers,
-                              params=params, data=data)
+            atc = self.s.post('https://secure.louisvuitton.com/ajaxsecure/addToCartForm', headers=headers, params=params, data=data)
 
             if self.browser:
                 self.driver.get(f"http://uk.louisvuitton.com/{self.lv_lang}/cart")
                 input()
             else:
-                print(f"Status Code: {str(ATC.status_code)}")
+                print(f"Status Code: {str(atc.status_code)}")
                 print("ATC success.")
 
 
@@ -220,8 +219,8 @@ if __name__ == '__main__':
     lv = LouisVuittonAPI(regionn, browserr)
 
     choice = input("What would you like to do? \n(ATC or INFO) ")
-    sku = input("SKU? ")
+    skuu = input("SKU? ")
     if choice.upper() == "ATC":
-        lv.add_to_cart(sku)
+        lv.add_to_cart(skuu)
     else:
-        lv.get_product_info(sku)
+        lv.get_product_info(skuu)
