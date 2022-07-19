@@ -1,5 +1,7 @@
 # LouisVuittonAPI
-API for Louis Vuitton written in Python by Luke Davis ([@R8T3D](http://www.twitter.com/R8T3D))
+API for Louis Vuitton
+Written in Python by Luke Davis ([@R8T3D](http://www.twitter.com/R8T3D))
+Ported to Python 3.8 by Alex Nathanail ([adnathanail](https://github.com/adnathanail))
 
 ## Features
   * Get information on products
@@ -15,7 +17,7 @@ API for Louis Vuitton written in Python by Luke Davis ([@R8T3D](http://www.twitt
 
 ## Installation
 
-LouisVuittonAPI requires **Python 2.7**
+LouisVuittonAPI is tested with **Python 3.8** and likely works for anything 3.6 onwards
 
 #####  1. Install requirements
 ```sh
